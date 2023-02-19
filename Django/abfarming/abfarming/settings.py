@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'main',
+    'location_field.apps.DefaultConfig',
 ]
 
 MIDDLEWARE = [
@@ -52,6 +53,10 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'abfarming.urls'
+
+LOCATION_FIELD = {
+    'provider.openstreetmap.max_zoom': 18,
+}
 
 TEMPLATES = [
     {

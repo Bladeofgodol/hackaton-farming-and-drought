@@ -12,5 +12,5 @@ urlpatterns = [
     path('regiondetail/',views.rdetail,name='regiondetail'),
     path('forum/',views.forum,name='forum'),
     path('contactus/',views.contactus,name='contactus'),
-    
+    path('weather/', views.weather, name = 'weather')
 ]

@@ -5,8 +5,52 @@
 
         <div class="vh-100 d-flex align-items-center container-fluid">
             <div class="col container d-flex justify-content-center">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8067823.148433805!2d35.988005800787775!3d9.121306011838538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1635d0cedd6cfd2b%3A0x7bf6a67f5348c55a!2sEthiopia!5e0!3m2!1sen!2suk!4v1676753110663!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          
+                  
+              <div>
+                <div class="col">
+                  <div>
+                    <h5> Latitude:</h5>
+                    <p>{{ datas.latitude }}</p>
+                  </div>
+                    
+                  <div>
+                    <h5> longitude:</h5>
+                    <p>{{ datas.longitude }}</p>
+                  </div>
+                   
+                  <div>
+                    <h5> elevation:</h5>
+                    <p>{{ datas.elevation }}</p>
+                  </div>
+                </div>
+                 
+              <div class="col">
+                <div>
+                  <h5> temprature:</h5>
+                  <p>{{  datas.current_weather.temperature }}</p>
+                </div>
+    
+
+                <div>
+                  <h5> wind speed:</h5>
+                  <p>{{ datas.current_weather.windspeed }}</p>
+                </div>
+          
+                <div>
+                  <h5> wind direction:</h5>
+                  <p>{{ datas.current_weather.winddirection }}</p>
+                </div>
+      
               </div>
+               
+                <div>
+                  <h5> Time:</h5>
+                  <p>{{ datas.current_weather.time }}</p>
+                </div>
+              </div>
+            </div>    
+              
               <div class="col container justify-content-center">
                 <div class="row d-flex m-5 justify-content-center">
                     <h1 class="text-danger">
@@ -90,4 +134,6 @@
     
     
             </div>
+            <script type="module" src="./main.js"></script>
           {% endblock %}
+          

@@ -13,16 +13,16 @@
   <div class="card-row row">
     <div class="col-md-4">
       <div class="card">
-        <img src="Teff-removebg-preview.png" class="card-img-top" alt="Your Image 1">
+        <img src="{% static '/img/Teff-removebg-preview.png'%}" class="card-img-top" alt="Your Image 1">
         <div class="card-footer d-flex  justify-content-center">
-          <a href="#" class="btn btn-success w-75">Teff</a>
+          <a href="{% url 'cropdetail'%}" class="btn btn-success w-75">Teff</a>
         </div>
 
       </div>
     </div>
     <div class="col-md-4">
       <div class="card">
-        <img src="coffee-remove background.png" class="card-img-top" alt="Your Image 1">
+        <img src="{% static 'img/coffee-remove background.png'%}" class="card-img-top" alt="Your Image 1">
         <div class="card-footer d-flex  justify-content-center">
           <a href="#" class="btn btn-success w-75">coffee</a>
         </div>
@@ -30,7 +30,7 @@
     </div>
     <div class="col-md-4">
       <div class="card">
-        <img src="weaht bg removed.png" class="card-img-top" alt="Your Image 1">
+        <img src="{% static 'img/weaht bg removed.png'%}" class="card-img-top" alt="Your Image 1">
         <div class="card-footer d-flex  justify-content-center">
           <a href="#" class="btn btn-success w-75">Wheat</a>
         </div>
