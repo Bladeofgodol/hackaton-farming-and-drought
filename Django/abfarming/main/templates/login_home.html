@@ -1,0 +1,93 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+        <div class="vh-100 d-flex align-items-center container-fluid">
+            <div class="col container d-flex justify-content-center">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8067823.148433805!2d35.988005800787775!3d9.121306011838538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1635d0cedd6cfd2b%3A0x7bf6a67f5348c55a!2sEthiopia!5e0!3m2!1sen!2suk!4v1676753110663!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+              <div class="col container justify-content-center">
+                <div class="row d-flex m-5 justify-content-center">
+                    <h1 class="text-danger">
+                        There is % of drought happening in your area
+                    </h1>
+                  </div>
+                  
+                  <div class="row m-5 d-flex justify-content-center">
+                    <p>
+                        there is a risk of drought in your area...
+                    </p>
+                  </div>
+                  <div class="row d-flex justify-content-center">
+                    <button type="button" class="btn w-50 btn-success">Read More</button>
+                </div>
+
+              </div>
+            
+          </div>
+
+          <div class=" container-fluid d-flex justify-content-center vh-100">
+            <div class="border m-3 d-flex justify-content-center align-items-center">
+              <div class="vh-100">
+                <div class="row d-flex align-items-center" style="height:10em">
+                  <h3 class="d-flex align-items-center justify-content-center ">
+                    Information Center
+                  </h3>
+                </div>
+                <div class="row d-flex m-3 align-items-center justify-content-between">
+                  <div class="col d-flex justify-content-center">
+                    <div class="card m-4" style="width: 18rem;">
+                      <div class="card-body ">
+                        <div class="row">
+                          <div class="d-flex justify-content-center">
+                            <img src="{% static '/img/crops.jpeg'%}" alt="" style="width:100%">
+                          </div>
+                        </div>
+                        <div class="row d-flex m-2 align-items-center justify-content-center">
+                          <button type="button" class="btn w-50 btn-success">Crop Types</button>
+                        </div>
+                       
+                       
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col d-flex justify-content-center">
+                    <div class="card m-4" style="width: 18rem;">
+                      <div class="card-body ">
+                        <div class="row">
+                          <div class=" d-flex justify-content-center">
+                            <img src="{% static '/img/regions.png'%}" alt="" style="width:100%">
+                          </div>
+                        </div>
+                        <div class="row d-flex m-2 align-items-center justify-content-center">
+                          <button type="button" class="btn w-75 btn-success">Region Information</button>
+                        </div>
+                       
+                       
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col d-flex justify-content-center">
+                    <div class="card m-4" style="width: 16rem;">
+                      <div class="card-body ">
+                        <div class="row">
+                          <div class="d-flex justify-content-center">
+                            <img src="{% static '/img/Crop Progression.jpeg'%}" alt="" style="width:100%">
+                          </div>
+                        </div>
+                        <div class="row d-flex m-2 align-items-center justify-content-center">
+                          <button type="button" class="btn w-75 btn-success">Crop progress</button>
+                        </div>
+                       
+                       
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+    
+    
+            </div>
+          {% endblock %}

@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="vh-100 d-flex container-fluid">
+<div>
+  <h1 class="d-flex justify-content-center align-items-center" style="height:3em">Crop</h1>
+  <div class="container-fluid d-flex justify-content-center">
+    <form class="d-flex w-50 " role="search">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+  </div>
+  <div class="card-row row">
+    <div class="col-md-4">
+      <div class="card">
+        <img src="Teff-removebg-preview.png" class="card-img-top" alt="Your Image 1">
+        <div class="card-footer d-flex  justify-content-center">
+          <a href="#" class="btn btn-success w-75">Teff</a>
+        </div>
+
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="coffee-remove background.png" class="card-img-top" alt="Your Image 1">
+        <div class="card-footer d-flex  justify-content-center">
+          <a href="#" class="btn btn-success w-75">coffee</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="weaht bg removed.png" class="card-img-top" alt="Your Image 1">
+        <div class="card-footer d-flex  justify-content-center">
+          <a href="#" class="btn btn-success w-75">Wheat</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+{% endblock %}

@@ -1,0 +1,39 @@
+
+  {% extends 'base.html' %}
+  {% load static %}
+  {% block content %}
+    <h1 class="d-flex justify-content-center align-items-center" style="height:2em">Region</h1>
+    <div class="container-fluid d-flex justify-content-center">
+      <form class="d-flex w-50 " role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success d-flex justify-content-center" type="submit">Search</button>
+      </form>
+    </div>
+    <div class="card-row row">
+      <div class="col-md-4">
+        <div class="card" >
+            <img src="{% static 'img/Benishangul-Gumuz (2).jpg'%}" class="card-img-top" alt="Your Image 1" style="height:20em">
+            <div class="card-footer d-flex justify-content-center">
+            <a href="#" class="btn btn-success w-75">Benshangul Gumuz</a>
+          </div>
+          
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="{% static 'img/Gambela (2).jpg'%}" class="card-img-top" alt="Your Image 1" style="height:20em">
+          <div class="card-footer  d-flex justify-content-center">
+          <a href="#" class="btn btn-success w-75">Gambela</a>
+        </div>
+      </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+            <img src="{% static 'img/Afar (2).jpg'%}" class="card-img-top" alt="Your Image 1" style="height:20em">
+            <div class="card-footer d-flex  justify-content-center">
+            <a href="#" class="btn btn-success w-75">Afar</a>
+          </div>
+      </div>
+    </div>
+      </div>
+{% endblock %}

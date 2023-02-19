@@ -1,0 +1,198 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+    <style>
+        .bgi {
+     background-image: url("/img/bg.jpg");
+     height: 100%;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+    
+ }
+ .bgi-bg{
+     position: absolute;
+     z-index: -1;
+     background-color:white;
+     opacity: 0.4;
+     width:100%;
+     height:100%;
+     margin: 0px;
+    }
+ .headingo {
+     padding-top: 150px;
+ }
+ 
+ .btu1 {
+ 
+     border: none;
+     width: 200px;
+     height: 100px;
+     border-radius: 20px;
+ 
+ }
+ 
+ .btu2 {
+     border: none;
+     margin-left: 50px;
+ 
+     width: 200px;
+     height: 100px;
+     border-radius: 20px;
+ }
+ .btu4{
+     padding-top: 50px;
+ }
+ .textu{
+     padding-top:60px;
+    
+ }
+ .navbaru{
+     background-color: 
+     #4d7057;
+ 
+ }
+ .padu{
+     margin-left: 50px;
+     padding-right: 50px;
+     padding-top: 40px;
+ }
+ .hhh{
+     padding-bottom: 20px;
+ }
+ .abc{
+     width: 100%;
+     height: 100%;
+ }
+ .huhu{
+     padding-left: 20px;
+ }
+ .bibi{
+     display: flex;
+    justify-content: space-around;
+ } 
+ 
+     </style>
+    <head>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+<!--  jQuery -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<!-- Isolated Version of Bootstrap, not needed if your site already uses Bootstrap -->
+<link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
+
+<!-- Bootstrap Date-Picker Plugin -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+
+
+    </head>
+    <body>
+        
+  <nav class="navbar navbar-expand-lg navbaru ">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+        </a>
+    </div>
+    <div class="container-fluid">
+        <div class="" id="">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active text-light" aria-current="page" href="/">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active text-light" aria-current="page" href="/doc">DOCTORS</a>
+                <li class="nav-item">
+                    <a class="nav-link active text-light " aria-current="page" href="/faq">FAQ</a>
+                </li>
+                {% comment %} <li class="nav-item">
+                  <a class="nav-link active text-light " aria-current="page" href="/login">login</a>
+              </li> {% endcomment %}
+                &nbsp; &nbsp; &nbsp; &nbsp;
+                <li>
+                  <a href="https://forms.gle/p3xykrwk1hBA2r2T6" target="_blank"  class=" text-light btn btn-outline-success me-2 text-light">Doctor Signup</a>
+                  <a href="/psignin" class=" text-light btn btn-outline-success me-2 text-light">Patient Signup</a>
+            </li>
+        </div>
+    </div>
+  </nav>
+
+            <div class="card bg-light">
+            <article class="card-body mx-auto" style="max-width: 400px;">
+                <h3 class="card-title mt-3 text-center" style="color: #4d7057;">Register</h3>
+                <p class="text-center" style="color: #4d7057;">Please fill the required info on the following form.</p>
+                
+                
+                <form method="post">
+                <div class="form-group input-group">
+                   
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+                     </div>
+                    <input name="" class="form-control" placeholder="First name" type="text">
+                </div> <!-- form-group// -->
+                <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+                     </div>
+                    <input name="" class="form-control" placeholder="Last name" type="text">
+                </div> <!-- form-group// -->
+                <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"> <i class="fa fa-phone"></i> </span>
+                    </div>
+                    <input name="" class="form-control" placeholder="Phone number" type="text">
+                </div> <!-- form-group// -->
+                <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"> <i class="fa fa-building"></i> </span>
+                    </div>
+                    <input name="" class="form-control" placeholder="Country" type="text">
+                </div> <!-- form-group// -->
+                <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"> <i class="fa fa-clock"></i> </span>
+                    </div>
+                    <input name="" class="form-control" placeholder="Date of birth" type="date">
+                </div> <!-- form-group// -->
+                <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                    </div>
+                    <input class="form-control" placeholder="Create password" type="password">
+                </div> <!-- form-group// -->
+                <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                    </div>
+                    <input class="form-control" placeholder="Repeat password" type="password">
+                </div> <!-- form-group// -->                                      
+                <div class="form-group">
+                    <button class=" btn text-bg-success btn-outline-success me-2 btn-block">Submit</button>
+                </div> <!-- form-group// -->      
+                <p class="text-center">Have an account? <a href="/">Log In</a> </p>                                                                 
+            </form>
+            </article>
+            </div> <!-- card.// -->
+            
+            </div> 
+            <!--container end.//-->
+            
+            <br><br>
+            
+    </body>
+    </html>
+{% endblock %}

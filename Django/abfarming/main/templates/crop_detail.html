@@ -1,0 +1,99 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+      <div class="row container-fluid d-flex justify-content-center vh-100">
+        <div
+          class="row-1 d-flex justify-content-center container" 
+        >
+          <h2 class=" d-flex justify-content-center">Teff</h2>
+        </div>
+        <div class="row container d-flex align-items-center">
+          <div class="col container">
+            <img
+              src="{% static '/img/Teff-removebg-preview.png'%}"
+              alt=""
+              style="width: 100%; height: 25em"
+            />
+          </div>
+          <div
+            class="col d-flex justify-content-center align-items-center container"
+          >
+            <div>
+              <h3 class="d-flex justify-content-center">some information about Teff</h3>
+
+              <br />
+              <p class="fs-5">
+                Teff is a grain crop that is native to Ethiopia and is widely
+                cultivated and consumed in the country. It is a small,
+                gluten-free grain that is packed with nutrients, including
+                protein, dietary fiber, iron, and calcium. Teff is also a good
+                source of resistant starch, which has been linked to several
+                health benefits, including improved digestion and reduced risk
+                of chronic diseases. Teff is traditionally used to make injera,
+                a fermented flatbread that is a staple in Ethiopian cuisine. It
+                is also used to make porridges, stews, and other traditional
+                dishes. Teff has gained popularity in recent years as a health
+                food and gluten-free alternative to wheat flour.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class=" container-fluid d-flex justify-content-center vh-100">
+        <div class="border m-3 d-flex justify-content-center align-items-center">
+          <div class="vh-100">
+            <div class="row d-flex align-items-center" style="height:20em">
+              <h3 class="d-flex align-items-center justify-content-center ">
+                Details about teff
+              </h3>
+            </div>
+            <div class="row d-flex m-3 align-items-center justify-content-between">
+              <div class="col d-flex justify-content-center">
+                <div class="card m-4" style="width: 18rem;">
+                  <div class="card-body ">
+                    <div class="row">
+                      <h5 class="card-title d-flex justify-content-center">
+                        <i class="fa-solid fa-ruler-vertical mx-2"></i>
+                        Altitude</h5>
+                      
+                    </div>
+                    <div class="row d-flex align-items-center">
+                      <p class="card-text">  1,800 and 2,100 meters above sea level</p>
+                    </div>
+                    
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="col d-flex justify-content-center">
+                <div class="card m-4" style="width: 18rem;">
+                  <div class="card-body">
+                    <h5 class="card-title d-flex justify-content-center">
+                      <i class="fa-solid fa-cloud mx-2"></i>
+                      Climate</h5>
+                    
+                    <p class="card-text"> semi-arid climate with an average annual temperature of 10-27°C
+                      average annual rainfall of 450-850 mm.</p>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="col d-flex justify-content-center">
+                <div class="card m-4" style="width: 18rem;">
+                  <div class="card-body">
+                    <h5 class="card-title d-flex justify-content-center">
+                      <i class="fa-solid fa-location-dot mx-2"></i>
+                      Region</h5>
+                    
+                    <p class="card-text">Amhara, Tigray, Oromia, and Southern Nations, Nationalities, and Peoples' Region (SNNPR)
+                    </p>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+{% endblock %}
